@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Analysis App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        
+        .container {
+            margin: auto;
+            padding: 20px;
+            margin-top: 100px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-between fixed-top bg-light px-5 py-3">
+            <a href="#" class="navbar-brand">EU Music Analysis</a>
+            <nav>
+                <a href="#home" class="px-2">Home</a>
+                <a href="#correlation" class="px-2">Features Correlation</a>
+                <a href="#positivitychart" class="px-2">Positivity Score</a>
+                <a href="#genres" class="px-2">Popular Genre</a>
+                <a href="#models" class="px-2">ML model</a>
+                <a href="#playlist" class="px-2">EU Playlist</a>
+
+            </nav>
+        </header>
+        <section class="py-5" id="home" style="height: 300px">
+            <div class="justify-content-center">
+                <h2 class="text-center">Rythms of Europe</h2>
+                <p class="text-justify">Rhythms of Europe analyzes Spotify's top songs to calclate positivity scores based on the audio features of EU countries. By analyzing audio features, such as tempo, energy, and valence, the project calculates positivity scores for each country. These scores provide insights into the overall mood and vibe of the music enjoyed by listeners.The project goes beyond numbers and charts. It visually maps popular music genres across the EU using an interactive map. Imagine exploring the rhythmic diversity of Europe by clicking on different regions and discovering the dominant genres in each country. From upbeat pop hits in Sweden to soulful ballads in Spain, the musical tapestry of Europe comes alive through this visualization.And for those seeking personalized playlists, Rhythms of Europe has you covered. Leveraging machine learning techniques, it creates country-specific top 10 playlists based on the positivity scores. So whether you’re in Germany craving uplifting tunes or in Italy yearning for melodic escapades, these playlists offer a delightful blend of local flavor and positive vibes.</p>
+            </div>
+        </section>
+        
+        <section class="py-5" id="correlation">
+            <br><br>
+            <h2 class="text-center">Features Correlation</h2>
+            <div id="correlationChart" style="height: 600px;"></div>
+        </section>
+     
+
+        <section class="py-5" id="positivitychart">
+            <br><br>
+            <h2 class="text-center">Positivity Score</h2>
+            <canvas id="positivityChart" width="800" height="400"></canvas>
+        </section>
+
+        <section class="py-5" id="genres">
+            <br><br>
+            <h2 class="text-center">Most Popular Genre in EU</h2>
+            <div id="mapContainer" style="width:100%;height:600px;"></div>
+        </section>
+
+        <section class="py-5" id="models">
+            <br><br>
+            <h2 class="text-center">ML model performance</h2><br><br>
+            <canvas id="performanceChart"></canvas>
+        </section>
+
+
+
+        <section class="py-5" id="playlist">
+            <br><br>
+            <div class="container mt-5">
+                <h2 class="text-center ">Top 10 Playlists by Country</h2>
+                <br>
+                <form id="playlistForm" class="mb-4">
+                    <div class="form-group">
+                        <label for="countrySelect">Select Country:</label>
+                        <select class="form-control" id="countrySelect">
+                            <!-- Options will be populated by JS -->
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get Playlist</button>
+                </form>
+                <div id="playlistContainer" class="row">
+                    <!-- Playlist will be populated by JS -->
+                </div>
+                <canvas id="playlistChart" width="900" height="400" style="display: none;"></canvas>
+            </div>
+        </section>
+
+    </div>
+    <script src="/static/scripts/scripts.js"></script>
+</body>
+</html>

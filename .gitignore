@@ -1,0 +1,8 @@
+# Environments
+.env
+.env.local
+.venv
+dataset/universal_top_spotify_songs.csv
+env/
+venv/
+ENV/

@@ -1,0 +1,14 @@
+body {
+    margin: 20px;
+}
+canvas {
+    background: #f7f3f3;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.playlist-card {
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    border: none;
+}

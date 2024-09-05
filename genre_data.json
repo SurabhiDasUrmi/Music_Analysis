@@ -1,0 +1,94 @@
+{
+    "Austria": {
+        "genre": "Pop",
+        "count": 473
+    },
+    "Belgium": {
+        "genre": "Pop",
+        "count": 628
+    },
+    "Bulgaria": {
+        "genre": "Pop",
+        "count": 239
+    },
+    "Czechia": {
+        "genre": "Pop",
+        "count": 249
+    },
+    "Denmark": {
+        "genre": "Pop",
+        "count": 384
+    },
+    "Estonia": {
+        "genre": "Pop",
+        "count": 389
+    },
+    "Finland": {
+        "genre": "Pop",
+        "count": 186
+    },
+    "France": {
+        "genre": "Pop",
+        "count": 253
+    },
+    "Germany": {
+        "genre": "Pop",
+        "count": 351
+    },
+    "Greece": {
+        "genre": "Indie",
+        "count": 44
+    },
+    "Hungary": {
+        "genre": "Pop",
+        "count": 253
+    },
+    "Ireland": {
+        "genre": "Pop",
+        "count": 1052
+    },
+    "Italy": {
+        "genre": "Pop",
+        "count": 105
+    },
+    "Latvia": {
+        "genre": "Pop",
+        "count": 355
+    },
+    "Lithuania": {
+        "genre": "Pop",
+        "count": 315
+    },
+    "Luxembourg": {
+        "genre": "Pop",
+        "count": 539
+    },
+    "Netherlands": {
+        "genre": "Pop",
+        "count": 447
+    },
+    "Poland": {
+        "genre": "Pop",
+        "count": 260
+    },
+    "Portugal": {
+        "genre": "Pop",
+        "count": 405
+    },
+    "Romania": {
+        "genre": "Pop",
+        "count": 173
+    },
+    "Slovakia": {
+        "genre": "Pop",
+        "count": 279
+    },
+    "Spain": {
+        "genre": "Latin/Reggaeton",
+        "count": 119
+    },
+    "Sweden": {
+        "genre": "Pop",
+        "count": 356
+    }
+}
